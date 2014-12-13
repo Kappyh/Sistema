@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	
+	<header class="menu-login">
+		<img src="img/logo.png" alt="">
+
+		<div class="user">
+			<div class="user-img"></div>
+			<span>offerdirect.com.br</span>
+
+			<div class="user-drop">
+				<ul>
+					<li> Ver Site </li>
+					<li> Sair </li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div class="row">
+		<aside class="main-sidebar medium-3 columns">
+			<div class="row">
+				<div class="aside-trigger">
+					<i class="fa fa-bars fa-lg"></i>
+				</div>
+			</div>
+
+			<div class="row">
+				<nav class="aside-nav">
+					<ul>
+						<li class="selected">
+							<div><i class="fa fa-home fa-lg"></i></div>
+							<a href="#">Home</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-power-off"></i></div>
+							<a href="#">Usuários</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-users"></i></div>
+							<a href="#">Cadastros</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-shopping-cart fa-lg"></i></div>
+							<a href="#">Produtos</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-folder"></i></div>
+							<a href="#">Categorias</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-image"></i></div>
+							<a href="#">Galerias</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+
+		<div class="container medium-9 medium-offset-3 columns end">
+			<div class="row home-title">
+				<div class="medium-12 columns">
+					<h3>OFFERDIRECT</h3> <span> gerenciamento de site</span>
+				</div>
+			</div>
+			
+			<div class="row breadcrumb">
+				<i class="fa fa-home"></i> <span>Home</span>
+			</div>
+
+			<div class="row list-title">
+				<div class="small-4 columns">
+					<i class="fa fa-folder"></i>
+					<h3> Informações da Categoria </h3>
+				</div>
+				<div class="small-8 columns right">
+					<button class="btn">
+						< Voltar
+					</button>
+					<button class="btn btn-submit">
+						<i class="fa fa-check-circle"></i>
+						Salvar & Continuar Edição
+					</button>
+					<button class="btn btn-submit">
+						<i class="fa fa-check"></i>
+						Salvar
+					</button>
+				</div>
+			</div>
+
+			<div class="row tabs">
+				<button class="btn-tab active">
+					Geral
+				</button>
+				<button class="btn-tab inactive">
+					Imagem
+				</button>
+			</div>
+
+			<div class="row form-include">
+				<div class="row each-data">
+					<div class="small-3 columns">
+						Nome: <span> * </span>
+					</div>
+					<div class="small-9 columns">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="row each-data">
+					<div class="small-3 columns">
+					Descrição:
+					</div>
+					<div class="small-9 columns">
+						<textarea name="" id=""></textarea>
+					</div>
+				</div>
+
+				<div class="row each-data">
+					<div class="small-3 columns">
+						Status: <span> * </span>
+					</div>
+					<div class="small-9 columns">
+						<input type="radio" name="status"> Ativado
+						<input type="radio" name="status"> Desativado
+						<input type="radio" name="status"> Pendente
+					</div>
+				</div>
+
+				<div class="row sub-button">
+					<button class="btn btn-action">
+						<i class="fa fa-plus"></i>
+						Adicionar Subcategoria
+					</button>
+				</div>
+
+				<div class="row table-list table-action">
+					<table width="98%">
+						<thead>
+							<tr>
+								<th width="30%"> Nome * </th>
+								<th width="15%"> Ativada </th>
+								<th width="15%"> Desativada </th>
+								<th width="15%"> Pendente </th>
+								<th width="15%"> Ação </th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="copy">
+			2014 &copy ABYX V2 - Sistema de Gerenciamento v2.1
+		</div>
+	</footer>
+
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+</body>
+</html>

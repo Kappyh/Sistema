@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/toastr.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	
+	<header class="menu-login">
+		<img src="img/logo.png" alt="">
+
+		<div class="user">
+			<div class="user-img"></div>
+			<span>offerdirect.com.br</span>
+
+			<div class="user-drop">
+				<ul>
+					<li> Ver Site </li>
+					<li> Sair </li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div class="row">
+		<aside class="main-sidebar medium-3 columns">
+			<div class="row">
+				<div class="aside-trigger">
+					<i class="fa fa-bars fa-lg"></i>
+				</div>
+			</div>
+
+			<div class="row">
+				<nav class="aside-nav">
+					<ul>
+						<li class="selected">
+							<div><i class="fa fa-home fa-lg"></i></div>
+							<a href="#">Home</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-power-off"></i></div>
+							<a href="#">Usuários</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-users"></i></div>
+							<a href="#">Cadastros</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-shopping-cart fa-lg"></i></div>
+							<a href="#">Produtos</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-folder"></i></div>
+							<a href="#">Categorias</a>
+						</li>
+						<li class="">
+							<div><i class="fa fa-image"></i></div>
+							<a href="#">Galerias</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+
+		<div class="container medium-9 medium-offset-3 columns end">
+			<div class="row home-title">
+				<div class="medium-12 columns">
+					<h3>OFFERDIRECT</h3> <span> gerenciamento de site</span>
+				</div>
+			</div>
+			
+			<div class="row breadcrumb">
+				<i class="fa fa-home"></i> <span>Home</span>
+			</div>
+
+			<div class="row list-title">
+				<div class="small-2 columns">
+					<i class="fa fa-folder"></i>
+					<h3> Categorias </h3>
+				</div>
+				<div class="small-10 columns right">
+					<button class="btn btn-new">
+						Novo <i class="fa fa-plus"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="row pagination">
+				<div class="small-7 columns">
+					<span> Página </span>
+					<button class="btn btn-pag"> < </button>
+					<input type="number">
+					<button class="btn btn-pag"> > </button>
+					<span class="divider"> de 0 </span>
+
+					<span> Ver </span>
+					<select name="per-view" id="">
+						<option value="10">10</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+						<option value="200">200</option>
+					</select>
+					<span class="divider"> itens </span>
+
+					<span> Total 0 </span>
+
+				</div>
+
+				<div class="small-5 columns right">
+					<select name="" id="">
+						<option value="Selecionar...">Selecionar...</option>
+						<option value="Ativar">Ativar</option>
+						<option value="Desativar">Desativar</option>
+						<option value="Deletar">Deletar</option>
+					</select>
+
+					<button class="btn btn-action">
+						<i class="fa fa-check"></i>
+						Enviar
+					</button>
+				</div>
+			</div>
+
+			<div class="row table-list">
+				<table width="98%">
+					<thead>
+						<tr>
+							<th width="1%"> <input type="checkbox"> </th>
+							<th width="25%"> Nome </th>
+							<th width="20%"> Desde </th>
+							<th width="20%"> Status </th>
+							<th width="20%"> Ações </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+
+							<td><input type="text"></td>
+
+							<td>
+								<div class="date">
+									<input type="text" placeholder="From">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<div class="date">
+									<input type="text" placeholder="To">
+									<i class="fa fa-calendar"></i>
+								</div>
+							</td>
+
+							<td>
+								<select name="" id="">
+									<option value="">Todos</option>
+									<option value="">Ativado</option>
+									<option value="">Desativado</option>
+									<option value="">Pendente</option>
+								</select>
+							</td>
+
+							<td>
+								<button class="btn btn-action">
+									<i class="fa fa-search"></i>
+									Procurar
+								</button>
+								<button class="btn btn-error">
+									<i class="fa fa-close"></i>
+									Reset
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+
+							<td>
+								Ola
+							</td>
+
+							<td>
+								
+							</td>
+
+							<td>
+								
+							</td>
+
+							<td>
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="copy">
+			2014 &copy ABYX V2 - Sistema de Gerenciamento v2.1
+		</div>
+	</footer>
+
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/toastr.min.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+		<script>
+		$(document).ready(function(){
+			if(window.location.hash)
+			{
+				var hash = window.location.hash.substring(1);
+				if(hash=="success")
+				{
+					toastr.success("Logado com sucesso");
+				}
+			}
+			$(".aside-trigger").on("click",function(){
+				if($(".main-sidebar").hasClass("mini-sidebar"))
+				{
+					$(".main-sidebar").removeClass("mini-sidebar");
+					$(".main-sidebar > .row:first-child").removeClass("mini-child");
+					$(".aside-trigger i").removeClass("mini-i");
+					$(".container").addClass("medium-offset-3").removeClass("mini-cont");
+					$(".aside-nav li").removeClass("mini-li");
+					$(".aside-nav li a").removeClass("mini-side-content");
+					$(".aside-nav li.selected").removeClass("mini");
+				}
+				else
+				{	
+					$(".main-sidebar").addClass("mini-sidebar");
+					$(".aside-nav li").addClass("mini-li");
+					$(".aside-nav li a").addClass("mini-side-content");
+					$(".aside-nav li.selected").addClass("mini");
+					$(".main-sidebar > .row:first-child").addClass("mini-child");
+					$(".aside-trigger i").addClass("mini-i");
+					$(".container").removeClass("medium-offset-3").addClass("mini-cont");	
+				}
+			});
+		});
+
+	</script>
+</body>
+</html>

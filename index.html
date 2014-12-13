@@ -1,9 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/toastr.min.css">
 </head>
-<body>
+<body class="login">
+	
+	<header class="menu-login">
+		<img src="img/logo.png" alt="">
+	</header>
 
+	<div class="login-container">
+		
+		<div class="row">
+			<div class="medium-6 columns medium-offset-3 end logo-login center">
+				<img src="img/logo-login.png" alt="">
+			</div>
+		</div>
+
+		<div class="row login-body">
+
+			<h3> Acesso ao Sistema </h3>
+
+			<form method="post" id="form-log">
+				<input type="email" id="email" name="email" placeholder="Usuário">
+				<input type="password" id="password" name="password" placeholder="Senha">
+				
+				<input type="checkbox" value="true" name="checkbox"> Lembrar-me </input>
+
+				<button class="btn btn-submit">Login -></button>
+			</form>
+
+			<div class="login-border"></div>
+
+			<section class="forgot-pass">
+				<h4> Esqueceu sua senha ? </h4>
+				<span>Entre em contato conosco através do email 
+					<a href="#">atendimento@abyx.com.br</a>	
+				</span>
+			</section>
+
+		</div>
+		<div class="row login-copy">
+			<span> 2014 &copy ABYX V2 - Sistema de Gerenciamento v2.1 </span>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/toastr.min.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#form-log").on("submit",function(){
+				var email= $("#email").val();
+				var senha= $("#password").val();
+				if(email=="gaperi_8@hotmail.com")
+					{
+						if (senha== "123")
+							{
+								location.href="listagem.html#success";
+								return false;
+							}
+						else
+							{
+								toastr.error("senha incorreta");
+								return false;
+							}	
+
+					}
+				else
+					{
+						toastr.error("e-mail incorreto");
+						return false;
+					}
+						
+			});	
+		});
+	</script>
 </body>
 </html>
